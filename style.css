@@ -1,0 +1,190 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+body {
+    background-image: url('https://assets.nflxext.com/ffe/siteui/vlv3/f841d4c7-10e1-40af-bcae-07a3f8dc141a/f6d17e05-6033-4924-991f-cd779b5d0007/VN-vi-20220502-popsignuptwoweeks-perspective_alpha_website_medium.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    color: #fff;
+    position: relative;
+}
+
+.background-overlay {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100%);
+    z-index: 1;
+}
+
+.header {
+    position: relative;
+    z-index: 2;
+    padding: 25px 50px;
+}
+
+.logo {
+    color: #e50914;
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.main-container {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 100px);
+    padding: 20px;
+}
+
+.form-box {
+    background-color: rgba(0, 0, 0, 0.75);
+    border-radius: 4px;
+    padding: 40px 68px 40px;
+    width: 100%;
+    max-width: 450px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+.form-box.hidden {
+    display: none;
+}
+
+.form-box h2 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 24px;
+    color: #fff;
+}
+
+/* Khung Input & Hiển thị Lỗi */
+.input-group {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input-group input {
+    width: 100%;
+    height: 50px;
+    background: #333;
+    border: none;
+    border-bottom: 2px solid transparent; /* Chuẩn bị cho viền lỗi */
+    border-radius: 4px;
+    color: #fff;
+    padding: 16px 20px 0;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.input-group input:focus {
+    background: #454545;
+}
+
+.input-group label {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #8c8c8c;
+    font-size: 16px;
+    pointer-events: none;
+    transition: 0.1s ease all;
+}
+
+/* Floating label */
+.input-group input:focus ~ label,
+.input-group input:not(:placeholder-shown) ~ label {
+    top: 12px;
+    transform: translateY(0);
+    font-size: 11px;
+    font-weight: 700;
+}
+
+/* Style khi có lỗi (Error State) */
+.input-group.error input {
+    border-bottom: 2px solid #e87c03; /* Màu cam báo lỗi kiểu Netflix */
+}
+
+.error-msg {
+    color: #e87c03;
+    font-size: 13px;
+    display: block;
+    margin-top: 5px;
+    min-height: 16px;
+}
+
+/* Buttons & Links */
+.btn-submit {
+    width: 100%;
+    background-color: #e50914;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 14px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 12px;
+    transition: background-color 0.2s;
+}
+
+.btn-submit:hover {
+    background-color: #f40612;
+}
+
+.form-help {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #b3b3b3;
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+
+.remember-me {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.remember-me input[type="checkbox"] {
+    accent-color: #737373;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+
+.need-help {
+    color: #b3b3b3;
+    text-decoration: none;
+}
+
+.need-help:hover {
+    text-decoration: underline;
+}
+
+.form-switch {
+    color: #737373;
+    font-size: 16px;
+}
+
+.form-switch a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.form-switch a:hover {
+    text-decoration: underline;
+}
