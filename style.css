@@ -67,7 +67,7 @@ body {
     color: #fff;
 }
 
-/* Khung Input & Hiển thị Lỗi */
+
 .input-group {
     position: relative;
     margin-bottom: 20px;
@@ -111,9 +111,9 @@ body {
     font-weight: 700;
 }
 
-/* Style khi có lỗi (Error State) */
+
 .input-group.error input {
-    border-bottom: 2px solid #e87c03; /* Màu cam báo lỗi kiểu Netflix */
+    border-bottom: 2px solid #e87c03; 
 }
 
 .error-msg {
@@ -124,7 +124,7 @@ body {
     min-height: 16px;
 }
 
-/* Buttons & Links */
+
 .btn-submit {
     width: 100%;
     background-color: #e50914;
